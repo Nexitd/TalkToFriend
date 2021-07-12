@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation for site:
+      -header
+      -wrapper
+      -about
+      -services
+       */
+
+/* header */
+
+header {
+	width: 100%;
+	height: 100vh;
+	background: #f4f9e2;
+	position: relative;
+}
+
+.header__container {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 27px 0;
+}
+
+.header__navabar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header__logo {
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: -0.035em;
+	color: #62d0df;
+}
+
+.list__item {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 35px;
+}
+
+.list__link {
+	font-size: 16px;
+	line-height: 16px;
+	color: #22356f;
+	text-decoration: none;
+}
+
+.list__link:hover {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.header__btn {
+	width: 150px;
+	font-size: 14px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #62d0df;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	z-index: 3;
+	position: absolute;
+	right: 10%;
+	top: 27px;
+}
+
+.header__body {
+	margin-top: 164px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header__body_section {
+	width: 50%;
+}
+
+.header__body_title {
+	margin: 20px 0 30px;
+	max-width: 550px;
+	font-size: 48px;
+	line-height: 53px;
+	letter-spacing: -0.035em;
+	color: #22356f;
+}
+
+.header__body_text {
+	max-width: 550px;
+	font-size: 24px;
+	line-height: 42px;
+	color: #22356f;
+	margin-bottom: 63px;
+}
+
+.header__body_btn {
+	width: 150px;
+	line-height: 50px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.inactive {
+	background: #f9b640;
+	color: #fff;
+	margin-right: 38px;
+}
+
+.active {
+	color: #fab63e;
+	background-color: transparent;
+}
+
+.inactive:hover {
+	background-color: #62d0df;
+	color: #000;
+}
+
+.active:hover {
+	border: 1px solid #62d0df;
+	color: #000;
+}
+
+.header__body_section img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+/* wrapper */
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	height: 50vh;
+}
+
+.section:first-of-type {
+	width: 70%;
+	background-color: #62d0df;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.section:last-of-type {
+	width: 30%;
+	background: url("../assets/images/OurCompany/christopher-campbell-40367.jpg")
+		100% 100% no-repeat;
+	background-size: cover;
+}
+
+.section__title {
+	font-size: 36px;
+	line-height: 27px;
+	letter-spacing: -0.006em;
+	color: #fff;
+	margin-bottom: 75px;
+}
+
+.section__text {
+	max-width: 550px;
+	font-size: 24px;
+	line-height: 35px;
+	color: #fff;
+}
+
+.section__text span {
+	font-weight: bold;
+}
+
+/* about */
+
+.about {
+	padding: 150px 0 75px;
+}
+.about__container {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.about__container_item:first-of-type {
+	width: 30%;
+}
+
+.about__container_item:last-of-type {
+	width: 70%;
+}
+
+.about__title {
+	font-size: 16px;
+	line-height: 23px;
+	letter-spacing: 0.06em;
+	color: #22356f;
+}
+
+.about__text {
+	max-width: 600px;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0.005em;
+	color: #22356f;
+}
+
+/* services */
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.services__item {
+	height: 360px;
+	padding: 50px 52px 0;
+}
+
+.service__pink {
+	background: #ffe2de;
+}
+
+.service__green {
+	background: #c4e769;
+}
+
+.service__lightblue {
+	background: #62d0df;
+}
+
+.service__blue {
+	background: #0052c1;
+}
+
+.services__item_text {
+	border-top: 1px solid #fff;
+	padding-top: 25px;
+	font-size: 32px;
+	line-height: 34px;
+	letter-spacing: -0.006em;
+	color: #ffffff;
+	max-width: 230px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.services__item_text::before {
+	content: "";
+	display: inline-block;
+	width: 2px;
+	height: 15px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #e9b730;
+	padding-right: 15px;
+}
