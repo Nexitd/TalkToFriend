@@ -362,7 +362,7 @@ header {
 }
 
 .help__item:first-of-type {
-	height: inherit;
+	height: 80vh;
 	width: 30%;
 	background: url("../assets/images/Help/linkedin-sales-navigator-402831.jpg") 100% 100% no-repeat;
 	background-size: cover;
@@ -415,7 +415,7 @@ header {
 
 .contacts__item:nth-child(1) {
 	background-color: #22356f;
-	height: inherit;
+	height: 80vh;
 	width: 70%;
 	padding-left: 100px;
 	display: flex;
