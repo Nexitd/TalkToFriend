@@ -774,6 +774,11 @@ header {
 		flex-direction: column;
 	}
 
+	.header__body_text {
+		text-align: center;
+		line-height: 30px;
+	}
+
 	.header__body_title {
 		text-align: center;
 	}
